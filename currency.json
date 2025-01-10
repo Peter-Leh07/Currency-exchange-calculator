@@ -1,0 +1,154 @@
+{
+    "currencys" : [
+        {
+            "name" : "euro",
+            "acronym": "EUR",
+            "exchange rate": 1
+        },
+        {
+            "name" : "americký dolár",
+            "acronym": "USD",
+            "exchange rate": 1.0286
+        },
+        {
+            "name" : "japonský jen",
+            "acronym": "JPY",
+            "exchange rate": 162.94
+        },
+        {
+            "name" : "bulharský lev",
+            "acronym": "BGN",
+            "exchange rate": 1.9558
+        },
+        {
+            "name" : "česká koruna",
+            "acronym": "CZK",
+            "exchange rate": 25.15 
+        },
+        {
+            "name" : "dánska koruna",
+            "acronym": "DKK",
+            "exchange rate": 7.4608
+        },
+        {
+            "name" : "libra šterlingov",
+            "acronym": "GBP",
+            "exchange rate": 0.83403 
+        },
+        {
+            "name" : "maďarský forint",
+            "acronym": "HUF",
+            "exchange rate": 416.25 
+        },
+        {
+            "name" : "nový rumunský lei",
+            "acronym": "RON",
+            "exchange rate": 4.9739 
+        },
+        {
+            "name" : "švédska koruna",
+            "acronym": "SEK",
+            "exchange rate": 11.5125
+        },
+        {
+            "name" : "švajčiarksy frank",
+            "acronym": "CHF",
+            "exchange rate": 0.9379 
+        },
+        {
+            "name" : "islandská koruna",
+            "acronym": "ISK",
+            "exchange rate": 145.1 
+        },
+        {
+            "name" : "nórska koruna",
+            "acronym": "NOK",
+            "exchange rate": 11.738 
+        },
+        {
+            "name" : "turecká líra",
+            "acronym": "TRY",
+            "exchange rate": 36.3952
+        },
+        {
+            "name" : "austrálsky dolár",
+            "acronym": "AUD",
+            "exchange rate": 1.66 
+        },
+        {
+            "name" : "brazílsky real",
+            "acronym": "BRL",
+            "exchange rate": 6.3075 
+        },
+        {
+            "name" : "kanadský dolár",
+            "acronym": "CAD",
+            "exchange rate": 1.4803
+        },
+        {
+            "name" : "čínsky jüan",
+            "acronym": "CNY",
+            "exchange rate": 7.5413
+        },
+        {
+            "name" : "honkongský dolár",
+            "acronym": "HKD",
+            "exchange rate": 8.0018 
+        },
+        {
+            "name" : "indonézska rupia",
+            "acronym": "IDR",
+            "exchange rate":16719.53 
+        },
+        {
+            "name" : "izraelský šekel",
+            "acronym": "ILS",
+            "exchange rate": 3.7798 
+        },
+        {
+            "name" : "indická rupia",
+            "acronym": "INR",
+            "exchange rate": 88.352
+        },
+        {
+            "name" : "juhokórejský won",
+            "acronym": "KRW",
+            "exchange rate": 1503.05 
+        },
+        {
+            "name" : "mexické peso",
+            "acronym": "MXN",
+            "exchange rate": 21.0093
+        },
+        {
+            "name" : "malajziský ringgit",
+            "acronym": "MYR",
+            "exchange rate": 4.6313
+        },
+        {
+            "name" : "novozélandský dolár",
+            "acronym": "NZD",
+            "exchange rate": 1.8383 
+        },
+        {
+            "name" : "filipísnke peso",
+            "acronym": "PHP",
+            "exchange rate": 60.192
+        },
+        {
+            "name" : "singapurský dolár",
+            "acronym": "SGD",
+            "exchange rate": 1.4096 
+        },
+        {
+            "name" : "thajský baht",
+            "acronym": "THB",
+            "exchange rate": 35.682
+        },
+        {
+            "name" : "juhoafrický rand",
+            "acronym": "ZAR",
+            "exchange rate": 19.4357
+        }
+    ]
+}
