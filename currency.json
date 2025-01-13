@@ -3,152 +3,183 @@
         {
             "name" : "euro",
             "acronym": "EUR",
-            "exchange rate": 1
+            "exchange rate": 1,
+            "flag" : "flag-icon-eu"
         },
         {
             "name" : "americký dolár",
             "acronym": "USD",
-            "exchange rate": 1.0286
+            "exchange rate": 1.0286,
+            "flag" : "flag-icon-us"
         },
         {
             "name" : "japonský jen",
             "acronym": "JPY",
-            "exchange rate": 162.94
+            "exchange rate": 162.94,
+            "flag" : "flag-icon-jp"
         },
         {
             "name" : "bulharský lev",
             "acronym": "BGN",
-            "exchange rate": 1.9558
+            "exchange rate": 1.9558,
+            "flag" : "flag-icon-bg"
         },
         {
             "name" : "česká koruna",
             "acronym": "CZK",
-            "exchange rate": 25.15 
+            "exchange rate": 25.15,
+            "flag" : "flag-icon-cz"
         },
         {
             "name" : "dánska koruna",
             "acronym": "DKK",
-            "exchange rate": 7.4608
+            "exchange rate": 7.4608,
+            "flag" : "flag-icon-dk"
         },
         {
             "name" : "libra šterlingov",
             "acronym": "GBP",
-            "exchange rate": 0.83403 
+            "exchange rate": 0.83403,
+            "flag" : "flag-icon-gb"
+
         },
         {
             "name" : "maďarský forint",
             "acronym": "HUF",
-            "exchange rate": 416.25 
+            "exchange rate": 416.25,
+            "flag" : "flag-icon-hu"
         },
         {
             "name" : "nový rumunský lei",
             "acronym": "RON",
-            "exchange rate": 4.9739 
+            "exchange rate": 4.9739,
+            "flag" : "flag-icon-ro"
         },
         {
             "name" : "švédska koruna",
             "acronym": "SEK",
-            "exchange rate": 11.5125
+            "exchange rate": 11.5125,
+            "flag" : "flag-icon-se"
         },
         {
             "name" : "švajčiarksy frank",
             "acronym": "CHF",
-            "exchange rate": 0.9379 
+            "exchange rate": 0.9379,
+            "flag" : "flag-icon-ch"
         },
         {
             "name" : "islandská koruna",
             "acronym": "ISK",
-            "exchange rate": 145.1 
+            "exchange rate": 145.1, 
+            "flag" : "flag-icon-is"
         },
         {
             "name" : "nórska koruna",
             "acronym": "NOK",
-            "exchange rate": 11.738 
+            "exchange rate": 11.738,
+            "flag" : "flag-icon-no"
         },
         {
             "name" : "turecká líra",
             "acronym": "TRY",
-            "exchange rate": 36.3952
+            "exchange rate": 36.3952,
+            "flag" : "flag-icon-tr"
         },
         {
             "name" : "austrálsky dolár",
             "acronym": "AUD",
-            "exchange rate": 1.66 
+            "exchange rate": 1.66,
+            "flag" : "flag-icon-au"
         },
         {
             "name" : "brazílsky real",
             "acronym": "BRL",
-            "exchange rate": 6.3075 
+            "exchange rate": 6.3075,
+            "flag" : "flag-icon-cr"
         },
         {
             "name" : "kanadský dolár",
             "acronym": "CAD",
-            "exchange rate": 1.4803
+            "exchange rate": 1.4803,
+            "flag" : "flag-icon-ca"
         },
         {
             "name" : "čínsky jüan",
             "acronym": "CNY",
-            "exchange rate": 7.5413
+            "exchange rate": 7.5413,
+            "flag" : "flag-icon-cn"
         },
         {
             "name" : "honkongský dolár",
             "acronym": "HKD",
-            "exchange rate": 8.0018 
+            "exchange rate": 8.0018,
+            "flag" : "flag-icon-hk" 
         },
         {
             "name" : "indonézska rupia",
             "acronym": "IDR",
-            "exchange rate":16719.53 
+            "exchange rate":16719.53,
+            "flag" : "flag-icon-id" 
         },
         {
             "name" : "izraelský šekel",
             "acronym": "ILS",
-            "exchange rate": 3.7798 
+            "exchange rate": 3.7798,
+            "flag" : "flag-icon-il"
         },
         {
             "name" : "indická rupia",
             "acronym": "INR",
-            "exchange rate": 88.352
+            "exchange rate": 88.352,
+            "flag" : "flag-icon-in"
         },
         {
             "name" : "juhokórejský won",
             "acronym": "KRW",
-            "exchange rate": 1503.05 
+            "exchange rate": 1503.05,
+            "flag" : "flag-icon-kr"
         },
         {
             "name" : "mexické peso",
             "acronym": "MXN",
-            "exchange rate": 21.0093
+            "exchange rate": 21.0093,
+            "flag" : "flag-icon-mx"
         },
         {
             "name" : "malajziský ringgit",
             "acronym": "MYR",
-            "exchange rate": 4.6313
+            "exchange rate": 4.6313,
+            "flag" : "flag-icon-my"
         },
         {
             "name" : "novozélandský dolár",
             "acronym": "NZD",
-            "exchange rate": 1.8383 
+            "exchange rate": 1.8383,
+            "flag" : "flag-icon-nz" 
         },
         {
             "name" : "filipísnke peso",
             "acronym": "PHP",
-            "exchange rate": 60.192
+            "exchange rate": 60.192,
+            "flag" : "flag-icon-ph"
         },
         {
             "name" : "singapurský dolár",
             "acronym": "SGD",
-            "exchange rate": 1.4096 
+            "exchange rate": 1.4096,
+            "flag" : "flag-icon-sg" 
         },
         {
             "name" : "thajský baht",
             "acronym": "THB",
-            "exchange rate": 35.682
+            "exchange rate": 35.682,
+            "flag" : "flag-icon-th"
         },
         {
             "name" : "juhoafrický rand",
             "acronym": "ZAR",
-            "exchange rate": 19.4357
+            "exchange rate": 19.4357, 
+            "flag" : "flag-icon-za"
         }
     ]
 }
