@@ -1,12 +1,6 @@
 {
     "currencys" : [
         {
-            "name" : "euro",
-            "acronym": "EUR",
-            "exchange rate": 1,
-            "flag" : "flag-icon-eu"
-        },
-        {
             "name" : "americký dolár",
             "acronym": "USD",
             "exchange rate": 1.0286,
