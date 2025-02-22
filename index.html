@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menová kalkulačka</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet">
+    <style>
+        form{
+            margin: 1vw
+        }
+        .container-input{
+            margin-bottom: 1vw;
+        }
+        html{
+            width: 98%;
+            height: 100%;
+        }
+        .scrollable-menu {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .currency-box {
+        height: 38px; 
+        line-height: 1.5; 
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    table td, table tr , table th{
+    border: 1px solid black;
+    }
+    .margin-left{
+    margin-left: 1vw;
+    }
+    .padding-left{
+        padding-left: 1vw;
+    }
+    </style>
+</head>
+<body>
+    <h1 class="mt-5 text-center">Menová kalkulačka</h1>
+    <p id="date" class="mb-4 text-center"></p>
+    <form>
+    <div class="container-input">
+        <div class="row">
+            <div class="col-2">
+                <input id="input" type="number" class="form-control currency-box" placeholder="Zadajte sumu ktorú chcete zmeniť" required>
+            </div>
+            <div class="col-3">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="buttonInput" data-bs-toggle="dropdown" aria-expanded="false">
+                        Vyberte menu
+                    </button>
+                    <ul class="dropdown-menu scrollable-menu" aria-labelledby="buttonInput">
+                        <li><a class="dropdown-item currency-input" href="#" data-value="EUR"><span class="flag-icon flag-icon-eu"></span> EUR</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="USD"><span class="flag-icon flag-icon-us"></span> USD</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="JPY"><span class="flag-icon flag-icon-jp"></span> JPY (Japonsko)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="BGN"><span class="flag-icon flag-icon-bg"></span> BGN (Bulharsko)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="CZK"><span class="flag-icon flag-icon-cz"></span> CZK (Česko)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="DKK"><span class="flag-icon flag-icon-dk"></span> DKK (Dánsko)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="GBP"><span class="flag-icon flag-icon-gb"></span> GBP (Spojené kráľovstvo)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="HUF"><span class="flag-icon flag-icon-hu"></span> HUF (Maďarsko)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="RON"><span class="flag-icon flag-icon-ro"></span> RON (Rumunsko)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="SEK"><span class="flag-icon flag-icon-se"></span> SEK (Švédsko)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="CHF"><span class="flag-icon flag-icon-ch"></span> CHF (Švajčiarsko)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="ISK"><span class="flag-icon flag-icon-is"></span> ISK (Island)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="NOK"><span class="flag-icon flag-icon-no"></span> NOK (Nórsko)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="TRY"><span class="flag-icon flag-icon-tr"></span> TRY (Turecko)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="AUD"><span class="flag-icon flag-icon-au"></span> AUD (Austrália)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="BRL"><span class="flag-icon flag-icon-br"></span> BRL (Brazília)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="CAD"><span class="flag-icon flag-icon-ca"></span> CAD (Kanada)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="CNY"><span class="flag-icon flag-icon-cn"></span> CNY (Čína)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="HKD"><span class="flag-icon flag-icon-hk"></span> HKD (Hongkong)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="IDR"><span class="flag-icon flag-icon-id"></span> IDR (Indonézia)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="ILS"><span class="flag-icon flag-icon-il"></span> ILS (Izrael)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="INR"><span class="flag-icon flag-icon-in"></span> INR (India)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="KRW"><span class="flag-icon flag-icon-kr"></span> KRW (Južná Kórea)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="MXN"><span class="flag-icon flag-icon-mx"></span> MXN (Mexiko)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="MYR"><span class="flag-icon flag-icon-my"></span> MYR (Malajzia)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="NZD"><span class="flag-icon flag-icon-nz"></span> NZD (Nový Zéland)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="PHP"><span class="flag-icon flag-icon-ph"></span> PHP (Filipíny)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="SGD"><span class="flag-icon flag-icon-sg"></span> SGD (Singapur)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="THB"><span class="flag-icon flag-icon-th"></span> THB (Thajsko)</a></li>
+                        <li><a class="dropdown-item currency-input" href="#" data-value="ZAR"><span class="flag-icon flag-icon-za"></span> ZAR (Juhoafrická republika)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-output">
+        <div class="row">
+            <div class="col-2">
+                <div id="output" class="alert alert-info currency-box">0</div>
+            </div>
+            <div class="col-3">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="buttonOutput" data-bs-toggle="dropdown" aria-expanded="false">
+                        Vyberte menu
+                    </button>
+                    <ul class="dropdown-menu scrollable-menu" aria-labelledby="buttonOutput">
+    <li><a class="dropdown-item currency-output" href="#" data-value="EUR"><span class="flag-icon flag-icon-eu"></span> EUR</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="USD"><span class="flag-icon flag-icon-us"></span> USD</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="JPY"><span class="flag-icon flag-icon-jp"></span> JPY (Japonsko)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="BGN"><span class="flag-icon flag-icon-bg"></span> BGN (Bulharsko)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="CZK"><span class="flag-icon flag-icon-cz"></span> CZK (Česko)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="DKK"><span class="flag-icon flag-icon-dk"></span> DKK (Dánsko)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="GBP"><span class="flag-icon flag-icon-gb"></span> GBP (Spojené kráľovstvo)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="HUF"><span class="flag-icon flag-icon-hu"></span> HUF (Maďarsko)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="RON"><span class="flag-icon flag-icon-ro"></span> RON (Rumunsko)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="SEK"><span class="flag-icon flag-icon-se"></span> SEK (Švédsko)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="CHF"><span class="flag-icon flag-icon-ch"></span> CHF (Švajčiarsko)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="ISK"><span class="flag-icon flag-icon-is"></span> ISK (Island)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="NOK"><span class="flag-icon flag-icon-no"></span> NOK (Nórsko)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="TRY"><span class="flag-icon flag-icon-tr"></span> TRY (Turecko)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="AUD"><span class="flag-icon flag-icon-au"></span> AUD (Austrália)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="BRL"><span class="flag-icon flag-icon-br"></span> BRL (Brazília)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="CAD"><span class="flag-icon flag-icon-ca"></span> CAD (Kanada)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="CNY"><span class="flag-icon flag-icon-cn"></span> CNY (Čína)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="HKD"><span class="flag-icon flag-icon-hk"></span> HKD (Hongkong)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="IDR"><span class="flag-icon flag-icon-id"></span> IDR (Indonézia)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="ILS"><span class="flag-icon flag-icon-il"></span> ILS (Izrael)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="INR"><span class="flag-icon flag-icon-in"></span> INR (India)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="KRW"><span class="flag-icon flag-icon-kr"></span> KRW (Južná Kórea)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="MXN"><span class="flag-icon flag-icon-mx"></span> MXN (Mexiko)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="MYR"><span class="flag-icon flag-icon-my"></span> MYR (Malajzia)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="NZD"><span class="flag-icon flag-icon-nz"></span> NZD (Nový Zéland)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="PHP"><span class="flag-icon flag-icon-ph"></span> PHP (Filipíny)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="SGD"><span class="flag-icon flag-icon-sg"></span> SGD (Singapur)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="THB"><span class="flag-icon flag-icon-th"></span> THB (Thajsko)</a></li>
+    <li><a class="dropdown-item currency-output" href="#" data-value="ZAR"><span class="flag-icon flag-icon-za"></span> ZAR (Juhoafrická republika)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div><button id="convert-btn">Convert here</button></div>
+    <div><button></button></div>
+    </form>
+    <div id="exchange-rate-table" class="table-responsive">
+        <div class="col-3">
+            <table id="table" class="table table-striped table-hover table-sm text-center margin-left">
+                <tr>
+                <th class="text-center">Mena</th>
+                <th class="text-center">Skratka</th>
+                <th class="text-center">Kurz</th>
+                </tr>
+        </table>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
